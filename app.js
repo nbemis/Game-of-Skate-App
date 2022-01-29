@@ -28,8 +28,6 @@ const playerTwoLetters = ['s2', 'k2', 'a2', 't2', 'e2'];
 
 
 
-
-
 loadEventListeners();
 
 
