@@ -63,7 +63,7 @@ button {
   padding: 0;
 }
 
-.btn, button{
+.btn, button, a{
   /* Fix this */
   font-family: Rowdies;
   color: white;
