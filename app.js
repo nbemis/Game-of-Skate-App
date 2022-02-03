@@ -101,7 +101,7 @@ function validateToggle(e){
     }else if(selectedLetter == 't' && (playerOneState == 3 || playerOneState == 4)){
       if(playerOneState == 3){
         playerOneState++;
-        document.getElementById('e1').outerHTML = `<a class="skate-card" href='play-again.html?player-one=Noah' id="e1">E</a>`
+        document.getElementById('e1').outerHTML = `<a class="skate-card" href='play-again.html?player-two=${myPlayerTwo}' id="e1">E</a>`
         toggleLetterColor(fullPlayer);
       }else{
         playerOneState--;
@@ -148,7 +148,7 @@ function validateToggle(e){
       if(playerTwoState == 3){
         playerTwoState++;
         toggleLetterColor(fullPlayer);
-        document.getElementById('e2').outerHTML = `<a class="skate-card" href='play-again.html?player-two=Alexis' id="e2">E</a>`
+        document.getElementById('e2').outerHTML = `<a class="skate-card" href='play-again.html?player-one=${myPlayerOne}' id="e2">E</a>`
       }else{
         playerTwoState--;
         document.getElementById('e2').outerHTML = `<button class="skate-card" id="e2">E</button>`
@@ -156,8 +156,6 @@ function validateToggle(e){
       }
     }else if(selectedLetter == 'e' && playerTwoState == 4 ){
       toggleLetterColor(fullPlayer)
-      playerTwoFlag = !playerTwoFlag;
-
  }
   }
 }
