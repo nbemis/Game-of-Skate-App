@@ -48,25 +48,20 @@ table {
 	border-spacing: 0;
 }
 
-a{
+a, button{
   text-decoration: none;
-}
-
-button {
-  background-color: transparent;
-  border-width: 0;
   font-family: inherit;
   font-size: inherit;
   font-style: inherit;
   font-weight: inherit;
   line-height: inherit;
-  padding: 0;
+  color: inherit;
 }
 
-.btn, button, a{
-  /* Fix this */
-  font-family: Rowdies;
-  color: white;
+button {
+  background-color: transparent;
+  border-width: 0;
+  padding: 0;
 }
 
 /* Main CSS */
