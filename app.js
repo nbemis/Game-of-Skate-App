@@ -133,7 +133,7 @@ function validateToggle(e) {
 if (pageId == 'play-again') {
   const theWinner = new URLSearchParams(window.location.search);
   const winPlayer = theWinner.get('player-one') != null ? theWinner.get('player-one') : theWinner.get('player-two');
-  document.getElementById('win-player').innerHTML = `${winPlayer} Wins!`;
+  document.getElementById('win-player').textContent = `${winPlayer} Wins!`;
 
 }
 
